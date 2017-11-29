@@ -1,0 +1,6 @@
+{  
+    "presets": ["es2015", "stage-0", "react"],
+    "plugins": [
+    "react-hot-loader/babel"//在js或者jsx中使用babel-loader加options方法  
+    ]  
+} 
