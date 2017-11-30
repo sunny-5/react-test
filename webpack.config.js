@@ -19,7 +19,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),  
         // commonsPlugin  
     ],  
-  
+    devServer: {
+      hot: true,
+      inline: true
+    },
     module: {  
         loaders: [  
             {  
