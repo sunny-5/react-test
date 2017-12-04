@@ -108,10 +108,23 @@ class Container  extends React.Component {
     }
 }
 
+class StateTest extends Component {
+    handleClick = (e) => {
+        this.setState({clicked:true});
+    }
+    render(){
+        return <a href="#" onClick={this.handleClick}>click me</a>
+    }
+}
+
 export default class Containers extends Component {  
     render() {  
         return (  
-            <Container></Container>
+            <div>
+                <LifeCycle></LifeCycle>
+                <Container></Container>
+                <StateTest></StateTest>
+            </div>
         );  
     }  
   }  
