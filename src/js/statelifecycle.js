@@ -3,38 +3,38 @@ import React, { Component } from 'react';
 class LifeCycle extends React.Component {
     constructor(props) {
         super(props);
-        alert("Initial render");
-        alert("constructor");
+        //alert("Initial render");
+        //alert("constructor");
         this.state = {str: "hello"};
     }
 
     componentWillMount() {
-        alert("componentWillMount");
+        //alert("componentWillMount");
     }
 
     componentDidMount() {
-        alert("componentDidMount");
+        //alert("componentDidMount");
     }
 
     componentWillReceiveProps(nextProps) {
-        alert("componentWillReceiveProps");
+        //alert("componentWillReceiveProps");
     }
 
     shouldComponentUpdate() {
-        alert("shouldComponentUpdate");
+        //alert("shouldComponentUpdate");
         return true;        // 记得要返回true
     }
 
     componentWillUpdate() {
-        alert("componentWillUpdate");
+        //alert("componentWillUpdate");
     }
 
     componentDidUpdate() {
-        alert("componentDidUpdate");
+        //alert("componentDidUpdate");
     }
 
     componentWillUnmount() {
-        alert("componentWillUnmount");
+        //alert("componentWillUnmount");
     }
 
     setTheState() {
@@ -52,7 +52,7 @@ class LifeCycle extends React.Component {
     }
 
     render() {
-        alert("render");
+        //alert("render");
         return(
             <div>
                 <span>{"Props:"}<h2>{parseInt(this.props.num)}</h2></span>
